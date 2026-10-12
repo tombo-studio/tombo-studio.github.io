@@ -1,6 +1,6 @@
 # Blame the Manager privacy policy
 
-Version: 2026-09-29
+Version: 2026-10-12
 
 Leia em português: https://tombo-studio.github.io/blame-the-manager/privacidade/
 
@@ -26,16 +26,18 @@ If you accept, this is what leaves:
 
 | Leaves | Kept out of the uploaded record |
 |---|---|
-| A session identifier of 8 characters, drawn again for every session (every time the game opens and every career started or loaded), and a random number for the same session that only tells apart, in storage, two sessions with the same identifier; with them, the game version, the world seed, the operating system, the language and the origin of the session | Your name, your e-mail and your Steam or itch.io account |
+| A session identifier of 8 characters, drawn again for every session (every time the game opens and every career started or loaded), and a random number for the same session that only tells apart, in storage, two sessions with the same identifier; a career identifier, drawn when the career starts and stored in its save (for a career started before this version, computed on loading from the world seed and the starting club, without being stored), which goes on every line once the career is open; with them, the game version, the world seed, the operating system, the language and the origin of the session | Your name, your e-mail and your Steam or itch.io account |
 | The session's events: screens opened, decisions made, match results | The names you type for the chairman, the club or the career, and the names of players, coaches and staff, including those from a name pack you imported: the game removes them from the session record before sending |
 | The message and stack of an error, with the folder path of your computer removed | The folder path, the machine name and your system user name |
 | One line per session with the system version, the graphics card and its vendor, the resolution, the display scale and the renderer | Any installation, account or personal identifier |
 | On a crash, the technical report of the moment it failed (minidump), with the system and the device | The minidump is the exception to this column: it copies fragments of the game's memory at that moment and can carry any text that was in it, including a name you typed or a folder path |
 
-The identifier changes with every session. The world seed goes
-on every line because it is what reproduces a bug, and it is the same in every
-session of a career: that is why sessions of the same career link to each
-other. The device line also repeats across sessions on the same computer. None
+The session identifier changes with every session. The career identifier is
+the same in every session of a career, and it only serves to link them to each
+other: two careers started from this version on have different identifiers,
+and it says nothing about the computer or about who plays. The world seed goes
+on every line because it is what reproduces a bug, and it is also the same in
+every session of a career. The device line also repeats across sessions on the same computer. None
 of this says who you are, and we do not use the data to try to find out who
 played.
 
@@ -83,7 +85,7 @@ Write to juliano@jmcoimbra.eng.br with the session ids. In Settings, on the
 Privacy card, the game shows the id of the open session, and the button Copy
 the ids of sent sessions copies the ids of every session that has reached
 Tombo Studio from this computer. That list is kept only on your computer, with
-the id and the date each session arrived and nothing else, and switching sending off
+the id and the date of each session's first upload and nothing else, and switching sending off
 does not delete it, because it is what lets you request deletion of what was
 already sent. Since no data links a session to you, those ids are the only way
 to find what was sent. The id has 8 characters and another session may share
