@@ -1,6 +1,6 @@
 # Política de privacidade do Blame the Manager
 
-Versão: 2026-10-12
+Versão: 2026-10-23
 
 Read in English: https://tombo-studio.github.io/blame-the-manager/privacy/
 
@@ -30,7 +30,7 @@ Se você aceitar, sai o seguinte:
 | Um identificador de sessão de 8 caracteres, sorteado de novo a cada sessão (cada abertura do jogo e cada carreira começada ou carregada), e um número aleatório da mesma sessão que só separa, no armazenamento, duas sessões com o mesmo identificador; um identificador de carreira, sorteado quando a carreira começa e gravado no save dela (numa carreira começada antes desta versão, calculado no carregamento a partir da semente e do clube de partida, sem ser gravado), que sai em toda linha depois que a carreira abre; com eles, a versão do jogo, a semente do mundo, o sistema operacional, o idioma e a origem da sessão | Seu nome, seu e-mail e sua conta Steam ou itch.io |
 | Os eventos da sessão: telas abertas, decisões tomadas, resultados das partidas | Os nomes que você digita para o presidente, o clube ou a carreira, e os nomes de jogadores, técnicos e comissão, inclusive os de um pacote de nomes que você importou: o jogo os apaga do registro da sessão antes de enviar |
 | A mensagem e a pilha de um erro, com o caminho das pastas do seu computador apagado | O caminho das pastas, o nome da máquina e o seu nome de usuário no sistema |
-| Uma linha por sessão com a versão do sistema, a placa de vídeo e o fabricante dela, a resolução, a escala de tela e o renderizador | Qualquer identificador de instalação, de conta ou de pessoa |
+| Uma linha por sessão com a versão do sistema, a placa de vídeo e o fabricante dela, a resolução, a escala de tela, o renderizador e se o aparelho é um Steam Deck (deduzido do nome da placa de vídeo, sem nenhum identificador) | Qualquer identificador de instalação, de conta ou de pessoa |
 | Num travamento, o relatório técnico do instante da falha (minidump), com o sistema e o dispositivo | O minidump é a exceção desta coluna: ele copia trechos da memória do jogo naquele instante e pode carregar qualquer texto que estava nela, inclusive um nome que você digitou ou um caminho de pasta |
 
 O identificador de sessão muda a cada sessão. O de carreira é o mesmo em
