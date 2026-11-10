@@ -1,17 +1,18 @@
 # Blame the Manager privacy policy
 
-Version: 2026-11-08
+Version: 2026-11-09
 
 Leia em português: https://tombo-studio.github.io/blame-the-manager/privacidade/
 
-Blame the Manager only sends anything off your computer if you accept. This
-page says what leaves, what stays, where it goes and how to change your mind.
+Blame the Manager sends two kinds of data off your computer, and each has its
+own rule. Crash reports come on, and you turn them off with one click. How you
+play only leaves if you accept. This page says what leaves, what stays, where
+it goes and how to change your mind.
 
-The game asks two separate questions, one for each level of sending. Crash
-reports serve to find and fix crashes and bugs. How you play serves to measure
-where people get lost in the game in order to improve it, and also to
-reproduce a bug. Each answer covers only its own level: if you accept one and
-decline the other, only what you accepted is sent.
+Crash reports serve to find and fix crashes and bugs. How you play serves to
+measure where people get lost in the game in order to improve it, and also to
+reproduce a bug. Each answer covers only its own level: if you leave one on and
+decline the other, only what you left on is sent.
 
 ## 1. Who is responsible for the data?
 
@@ -22,14 +23,14 @@ juliano@jmcoimbra.eng.br.
 
 ## 2. What does the game send, and what does it leave out?
 
-Nothing leaves without your consent, and each level has its own. The full
-record of every session always stays on your computer, in the game's log
-folder, with or without consent.
+Crash reports leave until you turn them off; how you play only leaves with
+your consent. The full record of every session always stays on your computer,
+in the game's log folder, whether anything is sent or not.
 
 ### Crash reports
 
-If you accept this level, this is what leaves when the game crashes or hits an
-error:
+Unless you turn this level off, this is what leaves when the game crashes or
+hits an error:
 
 | Leaves | Kept out of the uploaded report |
 |---|---|
@@ -41,7 +42,7 @@ error:
 | On a crash that closes the game, the technical report of the moment it failed (minidump), with the system and the device, sent at the next launch | The minidump is the exception to this column: it copies fragments of the game's memory at that moment and can carry any text that was in it, including a name you typed or a folder path |
 
 A report's session identifier only links to a stored record when you also
-accept the second level. With only this level accepted, the record of that
+accept the second level. With only this level on, the record of that
 session stays on your computer.
 
 ### How you play
@@ -90,21 +91,52 @@ and it is never sold or used for advertising.
 
 ## 5. On what legal basis?
 
-Consent, one for each level: LGPD art. 7, I, and GDPR art. 6(1)(a), and, for
-players in the European Union, Directive 2002/58/EC (ePrivacy), art. 5(3). You
-give it on the screen the game shows the first time it opens, before the board's
-letter: neither question comes with an answer selected, Send and Don't send
-are the same size, and the game only moves on once the questions on the screen
-are answered. The game has no account, sign-up or login. You can withdraw each
-consent at any time, with the same effort (section 6).
+Each level has its own basis, and both questions appear on the screen the game
+shows the first time it opens, before the board's letter. Send and Don't send
+are the same size on both levels. The game has no account, sign-up or login.
+
+- **Crash reports:** legitimate interest, LGPD art. 7, IX, and art. 10, and
+  GDPR art. 6(1)(f). The level comes set to Send and applies from the first
+  launch, as in other games that send crash reports by default. You can object
+  at any time, on the first screen or in Settings, with one click (LGPD art.
+  18, §2; GDPR art. 21), and sending stops at once (section 6).
+- **How you play:** consent, LGPD art. 7, I, and GDPR art. 6(1)(a), and, for
+  players in the European Union, Directive 2002/58/EC (ePrivacy), art. 5(3).
+  The question comes with no answer selected, and the game only moves on once
+  it is answered. You can withdraw consent at any time, with the same effort
+  (section 6).
+
+### Legitimate interest assessment
+
+This is the assessment we made to send crash reports without asking first.
+
+- **Purpose:** to diagnose and fix the game's crashes and errors. A crash
+  nobody reports does not get fixed, and the people who crash are the ones
+  least likely to come back and tell us. The reports serve nothing else: they
+  do not measure how you play, build no profile and are not used for
+  advertising.
+- **Necessity:** only what locates the bug leaves (the table in section 2).
+  The report of a game error goes without your name, the machine name, the
+  folder path and the name of a saved career, which the game removes before
+  sending; the user identifier is zeroed, and no installation identifier
+  leaves. The minidump of a crash that closes the game is the exception,
+  because it copies parts of memory: rules in the Sentry project remove the
+  system account name from the report's file paths, but a typed name that was
+  in memory may stay in it until the period in section 4.
+- **Balance:** you see the level already on at the first screen, with the text
+  of what leaves and a Don't send of the same size beside it, and you can turn
+  it off in Settings at any time; turning it off stops sending at once, crashes
+  included, and changes nothing in the game. The report is kept 30 days, in a
+  European Union region, without your IP address. If you declined crash
+  reports before this version, you stay declined.
 
 ## 6. How do I turn it off?
 
 In Settings (the ⚙ button), on the Privacy card, there is one switch for each level, and each
 one stops only its own.
 
-- **Send crash reports:** switched off, the game stops sending error reports at
-  once; the report of a crash that closes the game stops from the next launch.
+- **Send crash reports:** comes on. Switched off, the game stops sending error
+  reports and the report of a crash that closes the game at once.
 - **Send how you play:** switched off, the game stops sending the record at once
   and deletes what was queued. Switched on, sending starts with the next career
   you start, continue or load.
@@ -135,9 +167,9 @@ still open, and a crash that closes the game takes the session with it.
 
 You can ask for confirmation of processing, access, correction,
 anonymisation, blocking or deletion, portability, restriction of processing
-and information on who the data was shared with; you can object to the
-processing and withdraw your consent at any time (LGPD art. 18; GDPR arts. 7(3)
-and 15 to 21). You can also complain to the ANPD in Brazil, or to the data
+and information on who the data was shared with; you can object to crash
+reports and withdraw your consent to how you play at any time (LGPD art. 18;
+GDPR arts. 7(3) and 15 to 21). You can also complain to the ANPD in Brazil, or to the data
 protection authority of your country.
 
 JMC is a small-scale processing agent and, under ANPD Resolution CD/ANPD
@@ -150,15 +182,24 @@ The date at the top is the version of the text, and the game shows it in
 Settings, on the Privacy card. Each level also has the date of its scope, the
 last time what it sends changed:
 
-Crash reports scope: 2026-10-31
+Crash reports scope: 2026-11-09
 
 How you play scope: 2026-10-31
 
-The game asks about a level again only when its scope changes, and the scope
-changes when that level starts sending new data, to a new destination or for a
-longer time. A correction to the text, an address or a translation changes only
-the date at the top, and the question does not come back. If you answered the
-single question of version 2026-10-31, the same answer stands on both levels; if
-you answered in an earlier version, you see the question again.
+Crash reports with no answer: on
+
+A scope changes when that level starts sending new data, to a new destination,
+for a longer time or with a different default. A correction to the text, an
+address or a translation changes only the date at the top. The game asks about
+how you play again when its scope changes. Crash reports do not ask again once
+you have answered: if you left them on they stay on, and if you declined you
+stay declined.
+
+In version 2026-11-09 crash reports started coming on. If you never answered,
+they are now sent, and the first screen shows the level on, with Don't send
+beside it. If you declined in any earlier version, on the single question or on
+the two-level one, you stay declined. If you answered the single question of
+version 2026-10-31, the same answer stands for how you play; if you answered in
+an earlier version, you see that question again.
 
 Earlier versions stay in this page's history.
