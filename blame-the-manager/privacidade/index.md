@@ -1,18 +1,18 @@
 # Política de privacidade do Blame the Manager
 
-Versão: 2026-11-08
+Versão: 2026-11-09
 
 Read in English: https://tombo-studio.github.io/blame-the-manager/privacy/
 
-O Blame the Manager só envia alguma coisa para fora do seu computador se você
-aceitar. Esta página diz o que sai, o que fica, para onde vai e como mudar de
-ideia.
+O Blame the Manager envia dois tipos de dado para fora do seu computador, e
+cada um tem a sua regra. Os relatórios de travamento vêm ligados, e você os
+desliga com um clique. Como você joga só sai se você aceitar. Esta página diz o
+que sai, o que fica, para onde vai e como mudar de ideia.
 
-O jogo faz duas perguntas separadas, uma por nível de envio. Os relatórios de
-travamento servem para achar e consertar travamentos e defeitos. Como você joga
-serve para medir onde as pessoas se perdem no jogo e melhorá-lo, e também para
-reproduzir um defeito. Cada resposta vale só para o seu nível: quem aceita um e
-recusa o outro envia só o que aceitou.
+Os relatórios de travamento servem para achar e consertar travamentos e
+defeitos. Como você joga serve para medir onde as pessoas se perdem no jogo e
+melhorá-lo, e também para reproduzir um defeito. Cada resposta vale só para o
+seu nível: quem deixa um ligado e recusa o outro envia só o que deixou ligado.
 
 ## 1. Quem é o responsável pelos dados?
 
@@ -23,13 +23,14 @@ juliano@jmcoimbra.eng.br.
 
 ## 2. O que o jogo envia, e o que ele deixa de fora?
 
-Nada sai sem o seu consentimento, e cada nível tem o seu. O registro completo
-de cada sessão fica sempre no seu computador, na pasta de logs do jogo, com ou
-sem consentimento.
+Os relatórios de travamento saem até você desligá-los; como você joga só sai
+com o seu aceite. O registro completo de cada sessão fica sempre no seu
+computador, na pasta de logs do jogo, com ou sem envio.
 
 ### Relatórios de travamento
 
-Se você aceitar este nível, quando o jogo trava ou dá erro sai o seguinte:
+Enquanto você não desligar este nível, quando o jogo trava ou dá erro sai o
+seguinte:
 
 | Sai | Fica fora do relatório enviado |
 |---|---|
@@ -41,7 +42,7 @@ Se você aceitar este nível, quando o jogo trava ou dá erro sai o seguinte:
 | Num travamento que fecha o jogo, o relatório técnico do instante da falha (minidump), com o sistema e o aparelho, enviado na abertura seguinte | O minidump é a exceção desta coluna: ele copia trechos da memória do jogo naquele instante e pode carregar qualquer texto que estava nela, inclusive um nome que você digitou ou um caminho de pasta |
 
 O identificador da sessão de um relatório só se liga a um registro guardado
-quando você aceita também o segundo nível. Com só este nível aceito, o
+quando você aceita também o segundo nível. Com só este nível ligado, o
 registro daquela sessão fica no seu computador.
 
 ### Como você joga
@@ -93,22 +94,54 @@ recebe esses dados, e eles não são vendidos nem usados para publicidade.
 
 ## 5. Com que base legal?
 
-Consentimento, um para cada nível: LGPD art. 7º, I, e GDPR art. 6(1)(a), e,
-para quem joga na União Europeia, a Diretiva 2002/58/CE (ePrivacy), art.
-5(3). Você o dá na tela que o jogo mostra na primeira abertura, antes da carta
-da diretoria: as duas perguntas vêm sem resposta marcada, Enviar e Não enviar
-têm o mesmo tamanho, e o jogo só segue com as perguntas da tela respondidas. O jogo não tem
-conta, cadastro nem login. Você pode retirar cada consentimento a qualquer momento,
-com o mesmo esforço (seção 6).
+Cada nível tem a sua base, e as duas perguntas aparecem na tela que o jogo
+mostra na primeira abertura, antes da carta da diretoria. Enviar e Não enviar
+têm o mesmo tamanho nos dois níveis. O jogo não tem conta, cadastro nem login.
+
+- **Relatórios de travamento:** legítimo interesse, LGPD art. 7º, IX, e art.
+  10, e GDPR art. 6(1)(f). O nível vem marcado em Enviar e começa a valer na
+  primeira abertura, como em outros jogos que mandam relatório de travamento
+  por padrão. Você pode se opor a qualquer momento, na primeira tela ou em
+  Configurações, com um clique (LGPD art. 18, §2º; GDPR art. 21), e o envio
+  para na hora (seção 6).
+- **Como você joga:** consentimento, LGPD art. 7º, I, e GDPR art. 6(1)(a), e,
+  para quem joga na União Europeia, a Diretiva 2002/58/CE (ePrivacy), art.
+  5(3). A pergunta vem sem resposta marcada, e o jogo só segue com ela
+  respondida. Você pode retirar o consentimento a qualquer momento, com o
+  mesmo esforço (seção 6).
+
+### Avaliação do legítimo interesse
+
+Esta é a avaliação que fizemos para mandar os relatórios de travamento sem
+pedir antes.
+
+- **Finalidade:** diagnosticar e corrigir travamentos e erros do jogo. Um
+  travamento que ninguém relata não se conserta, e quem trava é justamente
+  quem menos volta para contar. Os relatórios não servem para mais nada: não
+  medem como você joga, não fazem perfil e não vão para publicidade.
+- **Necessidade:** sai o mínimo que localiza o defeito (a tabela da seção 2).
+  O relatório de um erro do jogo vai sem o seu nome, sem o nome da máquina,
+  sem o caminho das pastas e sem o nome de uma carreira salva, que o jogo
+  apaga antes de enviar; o identificador de usuário vai zerado, e nenhum
+  identificador de instalação sai. O minidump de um travamento que fecha o
+  jogo é a exceção, porque copia trechos da memória: regras no projeto do
+  Sentry apagam o nome da conta do sistema dos caminhos de arquivo do
+  relatório, mas um nome digitado que estava na memória pode seguir nele até
+  o prazo da seção 4.
+- **Equilíbrio:** você vê o nível já ligado na primeira tela, com o texto do
+  que sai e o Não enviar do mesmo tamanho ao lado, e desliga também em
+  Configurações, a qualquer momento; desligar para o envio na hora, crash
+  incluído, e não muda nada no jogo. O relatório fica 30 dias, numa região da
+  União Europeia, sem o seu endereço IP. Quem recusou os relatórios antes
+  desta versão segue recusado.
 
 ## 6. Como desligar?
 
 Em Configurações (o botão ⚙), no cartão Privacidade, há uma chave para cada nível, e cada uma
 para só o seu.
 
-- **Enviar relatórios de travamento:** desligada, o jogo para na hora de
-  enviar os relatórios de erro; o relatório de um travamento que fecha o jogo
-  deixa de sair a partir da abertura seguinte.
+- **Enviar relatórios de travamento:** vem ligada. Desligada, o jogo para na
+  hora de enviar os relatórios de erro e o de um travamento que fecha o jogo.
 - **Enviar como você joga:** desligada, o jogo para na hora de enviar o
   registro e apaga o que estava na fila. Ligada, o envio começa na próxima
   carreira que você começar, continuar ou carregar.
@@ -138,9 +171,9 @@ do erro está aberta, e um travamento que fecha o jogo leva a sessão junto.
 
 Você pode pedir confirmação do tratamento, acesso, correção, anonimização,
 bloqueio ou exclusão, portabilidade, restrição do tratamento e a informação
-sobre com quem os dados foram compartilhados; pode se opor ao tratamento e
-revogar o consentimento a qualquer momento (LGPD art. 18; GDPR arts. 7(3) e
-15 a 21). Você também pode reclamar à ANPD, no Brasil, ou à autoridade de
+sobre com quem os dados foram compartilhados; pode se opor aos relatórios de
+travamento e revogar o consentimento de como você joga a qualquer momento
+(LGPD art. 18; GDPR arts. 7(3) e 15 a 21). Você também pode reclamar à ANPD, no Brasil, ou à autoridade de
 proteção de dados do seu país.
 
 A JMC é agente de tratamento de pequeno porte e, pela Resolução CD/ANPD nº
@@ -153,15 +186,24 @@ A data no topo é a versão do texto, e o jogo a mostra em Configurações, no c
 Privacidade. Cada nível tem também a data do seu escopo, a última vez em que
 mudou o que ele envia:
 
-Escopo dos relatórios de travamento: 2026-10-31
+Escopo dos relatórios de travamento: 2026-11-09
 
 Escopo de como você joga: 2026-10-31
 
-O jogo volta a perguntar um nível só quando o escopo dele muda, e o escopo
-muda quando aquele nível passa a enviar um dado novo, para um destino novo ou
-por um prazo maior. Uma correção de texto, de endereço ou de tradução muda só
-a data no topo, e a pergunta não volta. Quem respondeu à pergunta única da
-versão 2026-10-31 segue com a mesma resposta nos dois níveis; quem respondeu
-numa versão anterior vê a pergunta de novo.
+Relatórios de travamento sem resposta: ligados
+
+O escopo muda quando aquele nível passa a enviar um dado novo, para um destino
+novo, por um prazo maior ou com outro padrão. Uma correção de texto, de
+endereço ou de tradução muda só a data no topo. O jogo volta a perguntar como
+você joga quando o escopo dele muda. Os relatórios de travamento não voltam a
+perguntar a quem já respondeu: quem deixou ligado segue ligado, e quem recusou
+segue recusado.
+
+Na versão 2026-11-09 os relatórios de travamento passaram a vir ligados. Quem
+nunca respondeu passa a enviá-los, e a primeira tela mostra o nível ligado, com
+o Não enviar ao lado. Quem recusou em qualquer versão anterior, na pergunta
+única ou na de dois níveis, segue recusado. Quem respondeu à pergunta única da
+versão 2026-10-31 segue com a mesma resposta em como você joga; quem respondeu
+numa versão anterior vê essa pergunta de novo.
 
 As versões anteriores ficam no histórico desta página.
