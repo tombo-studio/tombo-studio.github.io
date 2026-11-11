@@ -1,6 +1,6 @@
 # Política de privacidade do Blame the Manager
 
-Versão: 2026-11-09
+Versão: 2026-11-11
 
 Read in English: https://tombo-studio.github.io/blame-the-manager/privacy/
 
@@ -36,8 +36,8 @@ seguinte:
 |---|---|
 | A mensagem e a pilha do erro, com o caminho das pastas do seu computador e o nome de uma carreira salva apagados | O caminho das pastas, o nome da máquina e o seu nome de usuário no sistema |
 | Num erro do jogo e numa parada, os nomes dos 20 últimos eventos do jogo antes dela, cada um com a hora em que aconteceu | O conteúdo desses eventos: decisões, números e nomes ficam no seu computador |
-| O identificador da sessão (8 caracteres, sorteado de novo a cada sessão), quando a sessão já abriu, a versão do jogo e a origem da sessão | Qualquer identificador de instalação, de conta ou de pessoa: o identificador de usuário do relatório vai zerado |
-| Num erro do jogo, o nome do sistema operacional e o fabricante e a família da placa de vídeo; num erro do motor do jogo, também a versão do sistema e o modelo do aparelho, como o sistema os informa | Num erro do jogo, a versão do sistema, o modelo e o nome do aparelho, a resolução da tela e os identificadores e a versão do driver da placa de vídeo |
+| O identificador da sessão (8 caracteres, sorteado de novo a cada sessão), quando a sessão já abriu, a versão do jogo, a origem da sessão e a fase em que a falha aconteceu (ao abrir, jogando ou ao fechar) | Qualquer identificador de instalação, de conta ou de pessoa: o identificador de usuário do relatório vai zerado |
+| Num erro do jogo, o nome do sistema operacional e o fabricante e a família da placa de vídeo; num erro do motor do jogo, também o que o sistema informa do computador: a versão do sistema, o fabricante, a família e o modelo do aparelho, o processador, a memória e o armazenamento, a resolução e a densidade da tela, e o fabricante e a versão do driver da placa de vídeo | Num erro do jogo, a versão do sistema, o modelo e o nome do aparelho, a resolução da tela e os identificadores e a versão do driver da placa de vídeo |
 | Quando o jogo fica 30 segundos sem responder, a tela aberta, a temporada, a semana e quantos segundos ele ficou parado | A pilha: nesse caso o jogo não a manda |
 | Num travamento que fecha o jogo, o relatório técnico do instante da falha (minidump), com o sistema e o aparelho, enviado na abertura seguinte | O minidump é a exceção desta coluna: ele copia trechos da memória do jogo naquele instante e pode carregar qualquer texto que estava nela, inclusive um nome que você digitou ou um caminho de pasta |
 
@@ -186,7 +186,7 @@ A data no topo é a versão do texto, e o jogo a mostra em Configurações, no c
 Privacidade. Cada nível tem também a data do seu escopo, a última vez em que
 mudou o que ele envia:
 
-Escopo dos relatórios de travamento: 2026-11-09
+Escopo dos relatórios de travamento: 2026-11-11
 
 Escopo de como você joga: 2026-10-31
 

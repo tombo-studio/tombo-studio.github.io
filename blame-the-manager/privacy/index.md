@@ -1,6 +1,6 @@
 # Blame the Manager privacy policy
 
-Version: 2026-11-09
+Version: 2026-11-11
 
 Leia em português: https://tombo-studio.github.io/blame-the-manager/privacidade/
 
@@ -36,8 +36,8 @@ hits an error:
 |---|---|
 | The error message and stack, with the folder path of your computer and the name of a saved career removed | The folder path, the machine name and your system user name |
 | For an error in the game and for a stall, the names of the last 20 game events before it, each with the time it happened | What those events contain: decisions, numbers and names stay on your computer |
-| The session identifier (8 characters, drawn again for every session), once the session has opened, the game version and the origin of the session | Any installation, account or personal identifier: the report's user identifier is zeroed |
-| For an error in the game, the operating system name and the graphics card's vendor and family; for an error in the game engine, also the system version and the device model, as the system reports them | For an error in the game, the system version, the device model and name, the screen resolution, and the graphics card's identifiers and driver version |
+| The session identifier (8 characters, drawn again for every session), once the session has opened, the game version, the origin of the session and the phase the failure happened in (launching, playing or closing) | Any installation, account or personal identifier: the report's user identifier is zeroed |
+| For an error in the game, the operating system name and the graphics card's vendor and family; for an error in the game engine, also what the system reports about the computer: the system version, the device manufacturer, family and model, the processor, the memory and the storage, the screen resolution and density, and the graphics card's vendor and driver version | For an error in the game, the system version, the device model and name, the screen resolution, and the graphics card's identifiers and driver version |
 | When the game stops responding for 30 seconds, the open screen, the season, the week and how many seconds it was stuck | The stack: the game does not send it in this case |
 | On a crash that closes the game, the technical report of the moment it failed (minidump), with the system and the device, sent at the next launch | The minidump is the exception to this column: it copies fragments of the game's memory at that moment and can carry any text that was in it, including a name you typed or a folder path |
 
@@ -182,7 +182,7 @@ The date at the top is the version of the text, and the game shows it in
 Settings, on the Privacy card. Each level also has the date of its scope, the
 last time what it sends changed:
 
-Crash reports scope: 2026-11-09
+Crash reports scope: 2026-11-11
 
 How you play scope: 2026-10-31
 
